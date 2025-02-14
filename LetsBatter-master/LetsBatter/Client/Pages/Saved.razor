@@ -1,0 +1,83 @@
+@page "/Saved"
+
+<h3>Saved Items</h3>
+
+<p>Here are the items you have saved. You can add them to your cart or remove them from your saved list.</p>
+
+@if (savedItems.Any())
+{
+    <div class="saved-items-list">
+        @foreach (var item in savedItems)
+        {
+            <div class="saved-item">
+                <img src="@item.ImageUrl" alt="@item.Name" class="saved-image" />
+                <h4>@item.Name</h4>
+                <p>@item.Description</p>
+                <p><strong>Price:</strong> @item.Price</p>
+                <button class="btn btn-primary" @onclick="() => AddToCart(item)">Add to Cart</button>
+                <button class="btn btn-danger" @onclick="() => RemoveFromSaved(item)">Remove</button>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No saved items yet.</p>
+}
+
+<style>
+    .saved-items-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .saved-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .saved-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-primary {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        margin-top: 10px;
+    }
+</style>
+
+@code {
+    private List<SavedItem> savedItems = new List<SavedItem>();
+
+    private void AddToCart(SavedItem item)
+    {
+        // Logic to add item to cart
+        Console.WriteLine($"Added {item.Name} to cart!");
+        savedItems.Remove(item);
+    }
+
+    private void RemoveFromSaved(SavedItem item)
+    {
+        savedItems.Remove(item);
+    }
+
+    public class SavedItem
+    {
+        public int Id { get; set; }
+        public required string Name { get; set; }
+        public required string Description { get; set; }
+        public required string Price { get; set; }
+        public required string ImageUrl { get; set; }
+    }
+}

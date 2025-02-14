@@ -1,0 +1,147 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = LetsBatter.Client
+build_property.RootNamespace = LetsBatter.Client
+build_property.ProjectDir = C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Components/BrandSpotlight.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCcmFuZFNwb3RsaWdodC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Components/MainPageBanner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYWluUGFnZUJhbm5lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Components/Must-Sees.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNdXN0LVNlZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Components/NewArrivalsInBooks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOZXdBcnJpdmFsc0luQm9va3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Components/RecentKicks.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZWNlbnRLaWNrcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Components/RecentlyAdddedThisWeek.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZWNlbnRseUFkZGRlZFRoaXNXZWVrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Components/TopItemsInFree.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUb3BJdGVtc0luRnJlZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Blog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/ContactUs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Donate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9uYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Listings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdGluZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Pages/Search.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Shared/AdminLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Shared/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVtcHR5TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Shared/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZvb3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-b5yxbcgrea
+
+[C:/Users/DELL INSPIRON/Downloads/LetsBatter 2.0/LetsBatter-master/LetsBatter/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uy9dx02die

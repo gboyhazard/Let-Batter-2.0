@@ -1,0 +1,9 @@
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.csproj.AssemblyReference.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.AssemblyInfoInputs.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.AssemblyInfo.cs
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.csproj.CoreCompileInputs.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.RazorAssemblyInfo.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.RazorAssemblyInfo.cs
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Server\obj\Debug\net8.0\LetsBatter.Server.MvcApplicationPartsAssemblyInfo.cs

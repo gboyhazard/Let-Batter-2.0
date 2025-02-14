@@ -1,0 +1,164 @@
+@page "/Gadgets"
+
+<h3>Gadgets</h3>
+
+<p>Welcome to the Gadgets section! Browse the latest gadgets available for sale or donation.</p>
+
+<!-- Filter by Category -->
+<div class="filter-section">
+    <h5>Filter by Category</h5>
+    <ul class="filter-list">
+        <li><a href="#">Smartphones</a></li>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">Cameras</a></li>
+        <li><a href="#">Accessories</a></li>
+        <!-- Add more categories as needed -->
+    </ul>
+</div>
+
+<!-- Search bar -->
+<div class="container d-flex my-5 justify-content-center">
+    <div class="d-flex gap-3 col-6">
+        <input type="text" class="form-control" placeholder="Search gadgets..." @bind="searchQuery" @oninput="SearchGadgets" />
+        <a class="btn" style="background-color: #28A745; color: white; font-weight: bold;">Search</a>
+    </div>
+</div>
+
+<!-- Gadgets List -->
+<div class="gadgets-list">
+    @if (filteredGadgets.Any())
+    {
+        @foreach (var gadget in filteredGadgets)
+        {
+            <div class="gadget-item">
+                <img src="@gadget.ImageUrl" alt="@gadget.Name" class="gadget-image" />
+                <h4>@gadget.Name</h4>
+                <p>@gadget.Description</p>
+                <p><strong>Price:</strong> @gadget.Price</p>
+                <button class="btn btn-primary" @onclick="() => AddToCart(gadget)">Add to Cart</button>
+                <a href="gadget-details/@gadget.Id" class="btn btn-secondary">View Details</a>
+            </div>
+        }
+    }
+    else
+    {
+        <p>No gadgets found matching your criteria.</p>
+    }
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+    <button class="btn btn-outline-secondary" @onclick="PreviousPage" disabled="@(!CanGoToPreviousPage)">Previous</button>
+    <button class="btn btn-outline-secondary" @onclick="NextPage" disabled="@(!CanGoToNextPage)">Next</button>
+</div>
+
+<style>
+    .filter-section, .search-section {
+        margin-bottom: 20px;
+    }
+
+    .filter-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .filter-list li {
+        margin: 5px 0;
+    }
+
+    .gadgets-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .gadget-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .gadget-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-primary {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .btn-secondary {
+        background-color: #17a2b8;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+</style>
+
+@code {
+    private string searchQuery = string.Empty;
+    private List<Gadget> allGadgets = new List<Gadget>
+    {
+        new Gadget { Id = 1, Name = "Smartphone A", Description = "Latest model smartphone", Price = "$499", ImageUrl = "/images/Smartphone.webp" },
+        new Gadget { Id = 2, Name = "Laptop B", Description = "Powerful gaming laptop", Price = "$1200", ImageUrl = "/images/laptop.webp" },
+        new Gadget { Id = 3, Name = "Camera C", Description = "High-quality DSLR camera", Price = "$800", ImageUrl = "/images/camera_c.jpg" },
+        // Add more gadgets as needed
+    };
+    private List<Gadget> filteredGadgets = new List<Gadget>();  // Initialize with an empty list
+    private int currentPage = 1;
+    private const int itemsPerPage = 2;
+
+    protected override void OnInitialized()
+    {
+        filteredGadgets = allGadgets.Take(itemsPerPage).ToList();
+    }
+
+    private void SearchGadgets()
+    {
+        filteredGadgets = allGadgets.Where(g => g.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).Take(itemsPerPage).ToList();
+    }
+
+    private void AddToCart(Gadget gadget)
+    {
+        // Add to cart functionality (e.g., save to session, cart state)
+        Console.WriteLine($"Added {gadget.Name} to cart!");
+    }
+
+    private bool CanGoToPreviousPage => currentPage > 1;
+    private bool CanGoToNextPage => currentPage * itemsPerPage < allGadgets.Count;
+
+    private void PreviousPage()
+    {
+        if (CanGoToPreviousPage)
+        {
+            currentPage--;
+            filteredGadgets = allGadgets.Skip((currentPage - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+        }
+    }
+
+    private void NextPage()
+    {
+        if (CanGoToNextPage)
+        {
+            currentPage++;
+            filteredGadgets = allGadgets.Skip((currentPage - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+        }
+    }
+
+    public class Gadget
+    {
+        public int Id { get; set; }
+        public required string Name { get; set; }  // Make Name required
+        public required string Description { get; set; }
+        public required string Price { get; set; }
+        public required string ImageUrl { get; set; }
+    }
+}

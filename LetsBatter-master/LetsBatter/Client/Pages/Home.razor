@@ -1,0 +1,76 @@
+@page "/home"
+
+<style>
+    /* General hover effect for all containers */
+    .home-banner, .home-banner-2, .home-banner-3 {
+        transition: 0.3s ease-in-out;
+    }
+
+    .home-banner:hover, .home-banner-2:hover, .home-banner-3:hover {
+        transform: scale(1.02);
+        opacity: 0.95;
+    }
+
+    /* Button hover effect */
+    .btn:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+    }
+</style>
+
+<!-- Banner Section 1 -->
+<div class="home-banner d-flex">
+    <div class="col-6 d-flex align-items-center" style="background-color: #D2B48C; color: black;">
+        <div class="d-flex px-5 flex-column align-items-baseline">
+            <h2 class="fs-1">Donate your unwanted items and help a worthy cause</h2>
+            <div class="my-5">
+                <p style="text-align: justify;">
+                    Help us create a more sustainable future by donating your unwanted items today. At Let's Batter, we're on a mission to promote conscious consumption and reduce waste. By donating your pre-loved items, you can make a difference in the lives of others while contributing to a more eco-friendly way of living.
+                    <br /><br />
+                    Your donations can help us empower our community to connect, buy, sell, and barter in a way that puts people first. We believe in creating a world where everyone has the opportunity to thrive, and your donations can help make that vision a reality.
+                    <br /><br />
+                    Join us in our efforts to create a more sustainable future, one donation at a time. Together, we can make a difference and build a better world for ourselves and future generations. Click the button below to donate now and make an impact today.
+                </p>
+            </div>
+            <a class="btn btn-success" style="border-radius: 1px;">Make a Positive Impact. Start Donating</a>
+        </div>
+    </div>
+    <div class="banner-right col-6">
+        <!-- Placeholder for future content -->
+    </div>
+</div>
+
+<!-- Banner Section 2 -->
+<div class="home-banner-2 gap-4 d-flex" style="background-color: #c09f74; color: black; justify-content-center; align-items-center; margin-top: 5rem;">
+    <div class="col-5 d-flex align-items-center">
+        <div class="d-flex px-5 flex-column align-items-baseline">
+            <h2 class="fs-1">Clean out your closet and make some cash today!</h2>
+            <div class="my-5">
+                <p style="text-align: justify;">
+                    Have you been holding onto clothes, shoes, or accessories that you no longer use? Don't let them take up space in your closet! Post them on our site and turn your clutter into cash. It's easy to list items and connect with buyers in your area. Plus, our secure platform ensures a safe and hassle-free transaction process. Start selling today!
+                </p>
+            </div>
+            <a class="btn" style="border-radius: 2px; background-color: rgb(235, 163, 8); color: black;">Don't Wait - Start Selling in Seconds!</a>
+        </div>
+    </div>
+
+    <div class="bottom-2 col-6">
+        <!-- Placeholder for future content -->
+    </div>
+</div>
+
+<!-- Main Call-to-Action Banner -->
+<div class="home-banner-3 my-5">
+    <div class="w-100 h-100 d-flex justify-content-center align-items-end pb-5" style="background-color: #D2B48C">
+        <div class="w-50 text-center pb-5 mb-5 gap-4 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-black">The one-stop destination for buying, selling and bartering anything.</h1>
+            <a class="btn btn-primary px-5">Browse all Collections</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    // No additional C# logic needed for now
+}

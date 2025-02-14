@@ -1,0 +1,164 @@
+@page "/Machinery"
+
+<h3>Machinery</h3>
+
+<p>Welcome to the Machinery section! Browse a wide range of heavy machinery for sale or donation.</p>
+
+<!-- Filter by Category -->
+<div class="filter-section">
+    <h5>Filter by Category</h5>
+    <ul class="filter-list">
+        <li><a href="#">Construction Equipment</a></li>
+        <li><a href="#">Agricultural Machines</a></li>
+        <li><a href="#">Forklifts</a></li>
+        <li><a href="#">Generators</a></li>
+        <!-- Add more categories as needed -->
+    </ul>
+</div>
+
+<!-- Search bar -->
+<div class="container d-flex my-5 justify-content-center">
+    <div class="d-flex gap-3 col-6">
+        <input type="text" class="form-control" placeholder="Search for Machinery..." @bind="searchQuery" @oninput="SearchMachinery" />
+        <a class="btn" style="background-color: #28A745; color: white; font-weight: bold;">Search</a>
+    </div>
+</div>
+
+<!-- Machinery List -->
+<div class="machinery-list">
+    @if (filteredMachinery?.Any() == true)
+    {
+        @foreach (var machine in filteredMachinery)
+        {
+            <div class="machinery-item">
+                <img src="@machine.ImageUrl" alt="@machine.Name" class="machinery-image" />
+                <h4>@machine.Name</h4>
+                <p>@machine.Description</p>
+                <p><strong>Price:</strong> @machine.Price</p>
+                <button class="btn btn-primary" @onclick="() => AddToCart(machine)">Add to Cart</button>
+                <a href="machine-details/@machine.Id" class="btn btn-secondary">View Details</a>
+            </div>
+        }
+    }
+    else
+    {
+        <p>No machinery found matching your criteria.</p>
+    }
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+    <button class="btn btn-outline-secondary" @onclick="PreviousPage" disabled="@(!CanGoToPreviousPage)">Previous</button>
+    <button class="btn btn-outline-secondary" @onclick="NextPage" disabled="@(!CanGoToNextPage)">Next</button>
+</div>
+
+<style>
+    .filter-section, .search-section {
+        margin-bottom: 20px;
+    }
+
+    .filter-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .filter-list li {
+        margin: 5px 0;
+    }
+
+    .machinery-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .machinery-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .machinery-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-primary {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .btn-secondary {
+        background-color: #17a2b8;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+</style>
+
+@code {
+    private string searchQuery = string.Empty;
+    private List<Machine> allMachinery = new List<Machine>
+    {
+        new Machine { Id = 1, Name = "Excavator A", Description = "Heavy-duty construction excavator", Price = "$50,000", ImageUrl = "/images/Excavator.jpeg" },
+        new Machine { Id = 2, Name = "Tractor B", Description = "Durable agricultural tractor", Price = "$25,000", ImageUrl = "/images/Tractor.avif" },
+        new Machine { Id = 3, Name = "Forklift C", Description = "High-lifting forklift for warehouses", Price = "$12,000", ImageUrl = "/images/forklift_c.jpg" },
+        // Add more machinery items as needed
+    };
+    private List<Machine>? filteredMachinery;  // Make filteredMachinery nullable
+    private int currentPage = 1;
+    private const int itemsPerPage = 2;
+
+    protected override void OnInitialized()
+    {
+        filteredMachinery = allMachinery.Take(itemsPerPage).ToList();
+    }
+
+    private void SearchMachinery()
+    {
+        filteredMachinery = allMachinery.Where(m => m.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).Take(itemsPerPage).ToList();
+    }
+
+    private void AddToCart(Machine machine)
+    {
+        // Add to cart functionality (e.g., save to session, cart state)
+        Console.WriteLine($"Added {machine.Name} to cart!");
+    }
+
+    private bool CanGoToPreviousPage => currentPage > 1;
+    private bool CanGoToNextPage => currentPage * itemsPerPage < allMachinery.Count;
+
+    private void PreviousPage()
+    {
+        if (CanGoToPreviousPage)
+        {
+            currentPage--;
+            filteredMachinery = allMachinery.Skip((currentPage - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+        }
+    }
+
+    private void NextPage()
+    {
+        if (CanGoToNextPage)
+        {
+            currentPage++;
+            filteredMachinery = allMachinery.Skip((currentPage - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+        }
+    }
+
+    public class Machine
+    {
+        public int Id { get; set; }
+        public required string Name { get; set; }  // Ensure Name is required
+        public required string Description { get; set; }  // Ensure Description is required
+        public required string Price { get; set; }  // Ensure Price is required
+        public required string ImageUrl { get; set; }  // Ensure ImageUrl is required
+    }
+}

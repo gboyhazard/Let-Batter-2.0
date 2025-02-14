@@ -1,0 +1,150 @@
+@page "/Motor"
+
+<h3>Motor</h3>
+
+<p>Explore a wide range of vehicles including cars, motorcycles, trucks, and more for sale or donation.</p>
+
+<!-- Filter by Category -->
+<div class="filter-section">
+    <h5>Filter by Category</h5>
+    <ul class="filter-list">
+        <li><a href="#">Cars</a></li>
+        <li><a href="#">Motorcycles</a></li>
+        <li><a href="#">Trucks</a></li>
+    </ul>
+</div>
+
+<!-- Search bar -->
+<div class="search-section">
+    <h5>Search for Motors</h5>
+    <input type="text" class="form-control" placeholder="Search motors..." @bind="searchQuery" @oninput="SearchMotors" />
+</div>
+
+<!-- Motor List -->
+<div class="motor-list">
+    @if (filteredMotors?.Any() == true)
+    {
+        @foreach (var motor in filteredMotors)
+        {
+            <div class="motor-item">
+                <img src="@motor.ImageUrl" alt="@motor.Name" class="motor-image" />
+                <h4>@motor.Name</h4>
+                <p>@motor.Description</p>
+                <p><strong>Price:</strong> @motor.Price</p>
+                <button class="btn btn-primary" @onclick="() => AddToCart(motor)">Add to Cart</button>
+                <a href="motor-details/@motor.Id" class="btn btn-secondary">View Details</a>
+            </div>
+        }
+    }
+    else
+    {
+        <p>No motors found matching your criteria.</p>
+    }
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+    <button class="btn btn-outline-secondary" @onclick="PreviousPage" disabled="@(!CanGoToPreviousPage)">Previous</button>
+    <button class="btn btn-outline-secondary" @onclick="NextPage" disabled="@(!CanGoToNextPage)">Next</button>
+</div>
+
+<style>
+    .filter-section, .search-section {
+        margin-bottom: 20px;
+    }
+    .filter-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .filter-list li {
+        margin: 5px 0;
+    }
+    .motor-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .motor-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .motor-image {
+        width: 100%;
+        height: auto;
+    }
+    .btn-primary {
+        background-color: #28a745;
+        color: white;
+    }
+    .btn-secondary {
+        background-color: #17a2b8;
+        color: white;
+        margin-top: 10px;
+    }
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+</style>
+
+@code {
+    private string searchQuery = string.Empty;
+    private List<MotorItem> allMotors = new List<MotorItem>
+    {
+        new MotorItem { Id = 1, Name = "Sedan", Description = "Comfortable 4-door sedan for everyday use", Price = "$20,000", ImageUrl = "/images/Sedan.avif" },
+        new MotorItem { Id = 2, Name = "Sport Motorcycle", Description = "Fast and sleek motorcycle for sport enthusiasts", Price = "$15,000", ImageUrl = "/images/Sport Motorcycle.webp" },
+        new MotorItem { Id = 3, Name = "Truck C", Description = "Heavy-duty truck for industrial and commercial use", Price = "$35,000", ImageUrl = "/images/truck_c.jpg" },
+    };
+    private List<MotorItem>? filteredMotors;
+    private int currentPage = 1;
+    private const int itemsPerPage = 2;
+
+    protected override void OnInitialized()
+    {
+        filteredMotors = allMotors.Take(itemsPerPage).ToList();
+    }
+
+    private void SearchMotors()
+    {
+        filteredMotors = allMotors.Where(m => m.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).Take(itemsPerPage).ToList();
+    }
+
+    private void AddToCart(MotorItem motor)
+    {
+        Console.WriteLine($"Added {motor.Name} to cart!");
+    }
+
+    private bool CanGoToPreviousPage => currentPage > 1;
+    private bool CanGoToNextPage => currentPage * itemsPerPage < allMotors.Count;
+
+    private void PreviousPage()
+    {
+        if (CanGoToPreviousPage)
+        {
+            currentPage--;
+            filteredMotors = allMotors.Skip((currentPage - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+        }
+    }
+
+    private void NextPage()
+    {
+        if (CanGoToNextPage)
+        {
+            currentPage++;
+            filteredMotors = allMotors.Skip((currentPage - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+        }
+    }
+
+    public class MotorItem
+    {
+        public int Id { get; set; }
+        public required string Name { get; set; }
+        public required string Description { get; set; }
+        public required string Price { get; set; }
+        public required string ImageUrl { get; set; }
+    }
+}

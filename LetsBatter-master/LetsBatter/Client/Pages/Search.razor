@@ -1,0 +1,286 @@
+@page "/search"
+
+<div class="d-flex ms-5 col-2 my-4 gap-2 justify-content-end">
+    <a href="/">Home</a>
+    >>
+    <a href="#">Hardware</a>
+    >>
+    <a href="">Gadgets</a>
+    >>
+    <a>Calculator</a>
+</div>
+
+<div class="d-flex my-5">
+    <div class="col-2 pe-4" style="">
+        <div class="fs-2 text-center d-flex justify-content-center" style="background-color: black; color: white">
+            FILTERS
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Type
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse p-3" data-bs-parent="#accordionFlushExample">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Free</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked1">Paid</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked2" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked2">Batter</label>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Category
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                All Women
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                All Clothing
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Cellphones
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Gaming
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                            <label class="form-check-label" for="flexRadioDefault5">
+                                Shoes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                            <label class="form-check-label" for="flexRadioDefault6">
+                                Kids Only
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                            <label class="form-check-label" for="flexRadioDefault7">
+                                Electronics
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
+                            <label class="form-check-label" for="flexRadioDefault8">
+                                Home & Garden
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9">
+                            <label class="form-check-label" for="flexRadioDefault9">
+                                Kitchen Ware
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10">
+                            <label class="form-check-label" for="flexRadioDefault10">
+                                Assessories
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11">
+                            <label class="form-check-label" for="flexRadioDefault12">
+                                Vehices
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Price Range
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="d-flex gap-2 align-items-center">
+                            <div class="d-flex align-items-center ps-1 col-4 border-silver">
+                                <i class="text-silver">N$</i>
+                                <input class="border-0" style="min-width:0" type="number" />
+                            </div>
+                            <div>to</div>
+                            <div class="d-flex ps-1 col-4 border-silver">
+                                <i class="text-silver">N$</i>
+                                <input class="border-0" type="number" style="min-width: 0" />
+                            </div>
+                            <a class="col-3">Set</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Condition
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Excellent</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked1">Very Good</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked2" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked2">Good</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked3" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked3">Sub-Standard</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-column d-flex gap-3 mt-2 p-3" style="border-bottom: 1px solid black">
+            <button class="text-primary">Apply Filters</button>
+            <button class="text-primary">Reset All</button>
+        </div>
+    </div>
+
+    <div class="col-10 d-flex flex-column mb-5" style="">
+        <div class="d-flex flex-column" style="width: 100%">
+            <h2>Womens Clothing</h2>
+            <div class="my-3 p-3 d-flex justify-content-between align-items-center" style="border-bottom: 1px solid black; border-top: 1px solid black">
+                <div class="d-flex align-items-center">
+                    <span class="me-5">
+                        Showing Results [<label>132</label>]
+                    </span>
+                    <span class="filter-applied">
+                        For babies
+                        <i class="fa fa-xmark"></i>
+                    </span>
+                </div>
+                <div class="d-flex gap-2 me-4">
+                    <select>
+                        <option>Sort by newest</option>
+                        <option>Sort by oldest</option>
+                        <option>Sort by cheapest</option>
+                        <option>Sort by free</option>
+                    </select>
+                    <i class="fa-solid fa-square-poll-horizontal"></i>
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex m-0 row justify-content-start gap-3 g-4">
+
+
+
+
+
+
+
+
+
+
+            <div class="position-relative p-0 border-black" style="background-color: silver; height: auto; width: 19%; box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);">
+                <img src="images/products/3f4680cd-fa69-4786-8d79-564bf01de3da.jpg" class="col-12" style="height: auto; z-index: -10;" />
+                @if (isToggled)
+                {
+                    <div class="details-togggle position-absolute bg-white px-2 py-1 d-flex gap-2 align-items-center" style="z-index:auto; top: 3%; right: 3%; box-shadow: 0px 0px 20px rgba(0, 0, 0, 1); border: 1px solid black">
+                        <a @onclick="Toggle" class="m-0 text-decoration-none text-dark p-0 d-flex">
+                            <i class="fa m-0 p-0 d-flex fa-xmark"></i>
+                        </a>
+                    </div>
+                    <div class="details-togggle d-flex flex-column position-absolute bg-black text-white mx-1 p-2" style="bottom: 2%">
+                        <h5 class="mb-0"><a href="" class="text-decoration-none text-white">Texas Instruments Calculator - TI-81</a></h5>
+                        <label class="text-success fs-3"><a href="" class="text-success text-decoration-none">N$100.00</a></label>
+                        <label>18 days remaining</label>
+                        <div>
+                            <div>
+                                Passed Inspection
+                            </div>
+                            <div>
+                                Verified Supplier
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex gap-2">
+                                    <div class="bg-secondary d-flex align-items-center justify-content-center fs-1" style="height: 1em; width: 1em; border-radius: 2px">
+                                        G
+                                    </div>
+                                    <div class="d-flex text-warning align-items-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half"></i>
+                                        <label>[37]</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 me-3">
+                                    <div class="d-flex align-items-center gap-1">
+                                        6
+                                        <i class="fa fa-heart text-danger"></i>
+                                    </div>
+                                    <i class="fa float-end fa-message text-success"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="bg-black position-absolute text-white px-2" style="bottom: 3%; left: 1em; box-shadow: 0px 0px 40px rgba(255, 255, 255, 1);">
+                        <a class="m-0" href="/productDetails">
+                            <label class="text-decoration-underline">N$100.00</label>
+                        </a>
+                    </div>
+                }
+                <div class="position-absolute bg-white px-2 py-1 d-flex gap-3 align-items-center" style="z-index:auto; top: 3%; right: 3%; box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);">
+                    <a class="text-decoration-none d-flex text-black">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    <a class="text-decoration-none d-flex text-black">
+                        <i class="fa fa-comment-sms"></i>
+                    </a>
+                    <a @onclick="Toggle" class="text-decoration-none d-flex text-black">
+                        <i class="fa @(isToggled ? " fa-xmark" : " fa-bars")"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool isToggled { get; set; } = false;
+    private void Toggle()
+    {
+        isToggled = (isToggled) ? false : true;    
+    }
+
+}

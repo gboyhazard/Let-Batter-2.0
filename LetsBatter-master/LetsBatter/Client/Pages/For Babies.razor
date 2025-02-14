@@ -1,0 +1,72 @@
+@page "/For Babies"
+
+<!-- Page Header -->
+<h2>Baby Essentials – Buy, Sell, & Donate</h2>
+<p>Find baby clothes, toys, and essentials. Buy, sell, or donate items to help families in need.</p>
+
+<!-- Filter Section -->
+<div class="filters">
+    <label for="category">Category:</label>
+    <select id="category">
+        <option>All</option>
+        <option>Clothes</option>
+        <option>Toys</option>
+        <option>Furniture</option>
+        <option>Essentials</option>
+    </select>
+</div>
+
+<!-- Display Baby Items -->
+<div class="baby-items">
+    @foreach (var item in babyItems)
+    {
+        <div class="baby-item-card">
+            <!-- Item Image -->
+            <img src="@item.ImageUrl" alt="@item.Name" class="baby-item-image" />
+            
+            <!-- Item Name -->
+            <h3>@item.Name</h3>
+            
+            <!-- Item Condition -->
+            <p>Condition: @item.Condition</p>
+            
+            <!-- Price or Donation Label -->
+            <p><strong>@(item.IsDonated ? "Donated Item" : "$" + item.Price)</strong></p>
+            
+            <!-- Action Button (Buy or Request Donation) -->
+            <button class="buy-button">@(item.IsDonated ? "Request Donation" : "Buy Now")</button>
+        </div>
+    }
+</div>
+
+<!-- Button to Add a New Item -->
+<button class="add-item">Add Item</button>
+
+@code {
+    // Sample list of baby items
+    private List<BabyItem> babyItems = new()
+    {
+        new BabyItem("Baby Stroller", "New", "/images/baby stroller.jpg", 120, false),
+        new BabyItem("Baby Clothes Bundle", "Gently Used", "/images/baby clothes.jpeg", 0, true)
+    };
+
+    // Class representing a Baby Item
+    private class BabyItem
+    {
+        public string Name { get; set; } // Item name (Required)
+        public string Condition { get; set; } // Condition of the item
+        public string ImageUrl { get; set; } // Image URL
+        public double Price { get; set; } // Price (0 if donated)
+        public bool IsDonated { get; set; } // True if item is donated
+
+        // Constructor to enforce required properties
+        public BabyItem(string name, string condition, string imageUrl, double price, bool isDonated)
+        {
+            Name = name;
+            Condition = condition;
+            ImageUrl = imageUrl;
+            Price = price;
+            IsDonated = isDonated;
+        }
+    }
+}

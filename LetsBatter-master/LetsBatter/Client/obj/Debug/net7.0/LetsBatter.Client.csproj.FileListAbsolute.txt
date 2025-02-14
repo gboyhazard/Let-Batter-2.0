@@ -1,0 +1,6 @@
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Client\obj\Debug\net7.0\LetsBatter.Client.csproj.AssemblyReference.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Client\obj\Debug\net7.0\LetsBatter.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Client\obj\Debug\net7.0\LetsBatter.Client.AssemblyInfoInputs.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Client\obj\Debug\net7.0\LetsBatter.Client.AssemblyInfo.cs
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Client\obj\Debug\net7.0\LetsBatter.Client.csproj.CoreCompileInputs.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Client\obj\Debug\net7.0\LetsBatter.Client.MvcApplicationPartsAssemblyInfo.cache

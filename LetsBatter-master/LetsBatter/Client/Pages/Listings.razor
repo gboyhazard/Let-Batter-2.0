@@ -1,0 +1,141 @@
+@page "/listings"
+<div class="container my-5 p-0">
+    <div class="mb-4">
+        <h2>Heyy! __________, </h2>
+    </div>
+    <div class="d-flex gap-5 mb-5 align-items-center">
+        <h3 class="">Your Listings</h3>
+        <a class="text-white btn btn-primary px-3 py-2 d-flex align-items-center gap-3 text-decoration-none add-listingbtn"
+           style="border-radius:5px" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <i class="fa fa-plus"></i>
+            Add a New Listing
+        </a>
+    </div>
+    <div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="m-0 text-decoration-underline fw-bolder">Please Complete this form</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div>
+                    <div style="line-height: 1em" class="d-flex flex-column gap-2">
+                        <div class="d-flex flex-column">
+                            <label class=" fw-bold">Name of product <span class="text-danger">*</span></label>
+                            <input class="form-control" type="text" name="product-name" />
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class=" fw-bold">Description <span class="text-danger">*</span></label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class=" fw-bold">Price <span class="text-danger">*</span></label>
+                            <input class="form-control" type="number" />
+                        </div>
+                        <div>
+                            <label class=" fw-bold">Condition <span class="text-danger">*</span></label>
+                            <select class="form-select">
+                                <Search></Search>
+                                <option selected class="text-danger">Choose approriate condition</option>
+                                <option>5/5</option>
+                                <option>4/5</option>
+                                <option>3/5</option>
+                                <option>2/5</option>
+                                <option>1/5</option>
+                                <option disabled>0/5</option>
+                            </select>
+                        </div>
+                        <div class="mt-3 mb-1 d-flex align-items-center">
+                            <label class="fw-bold">Applicable Offers <span class="text-danger">*</span>:</label>
+                            <div class="form-check form-check-inline align-items-center d-flex gap-1">
+                                <input class="form-check-input m-0" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Batter</label>
+                            </div>
+                                    <div class="form-check form-check-inline align-items-center d-flex gap-1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Free</label>
+                            </div>
+                                    <div class="form-check form-check-inline align-items-center d-flex gap-1">
+                                <input class="form-check-input" checked type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                                <label class="form-check-label" for="inlineCheckbox3">Straight Cash</label>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class=" fw-bold">Product Type <span class="text-danger">*</span></label>
+                            <select class="form-select">
+                                <Search></Search>
+                                <option class="text-red">Choose appropriate item type</option>
+                                <option>Fashion</option>
+                                <option>Desktop</option>
+                                <option>Mobile Phone</option>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class=" fw-bold">Category(s) <span class="text-danger">*</span></label>
+                            <input class="form-control" type="search" />
+                        </div>
+                        <div>
+                            <label class=" fw-bold">Upload Photos <span class="text-danger">*</span></label>
+                            <input class="form-control" type="file" />
+                        </div>
+                        <div class="d-flex my-3">
+                            <label class=" fw-bold">Rate this product: </label>
+                            <div class="ms-3">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <label class="m-0">By continuing, you agree to LetsBatters <a href="">Terms of Use</a></label>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer gap-4">
+                <button type="button" class="btn btn-danger px-4" data-bs-dismiss="modal">Clear</button>
+                <button type="button" class="btn btn-primary px-4">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="mb-4 w-100" style="border-bottom: 1px solid black">
+        <ul class="nav nav-underline d-flex gap-3">
+          <li class="nav-item bg-info bg-gradient">
+                <a class="nav-link text-black active" aria-current="page" href="#">All listings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Approved</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link text-black" href="#">Pending</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link text-black" href="">Rejected</a>
+          </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="border-silver p-2 col-3">
+            <div class="col-12" style="height: 20em; background-color: rgba(0,0,0,0.1)"></div>
+            <h3>Texas Instruments Calculator - TI-81</h3>
+            <div class="d-flex justify-content-between">
+                <span class="bg-success py-1 px-3" style="border-radius: 3px">Approved</span>
+                <select class="bg-transparent w-auto" style="border:none; ">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

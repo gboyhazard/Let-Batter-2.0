@@ -1,0 +1,11 @@
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\bin\Debug\net7.0\LetsBatter.Shared.deps.json
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\bin\Debug\net7.0\LetsBatter.Shared.dll
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\bin\Debug\net7.0\LetsBatter.Shared.pdb
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\obj\Debug\net7.0\LetsBatter.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\obj\Debug\net7.0\LetsBatter.Shared.AssemblyInfoInputs.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\obj\Debug\net7.0\LetsBatter.Shared.AssemblyInfo.cs
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\obj\Debug\net7.0\LetsBatter.Shared.csproj.CoreCompileInputs.cache
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\obj\Debug\net7.0\LetsBatter.Shared.dll
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\obj\Debug\net7.0\refint\LetsBatter.Shared.dll
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\obj\Debug\net7.0\LetsBatter.Shared.pdb
+C:\Users\DELL INSPIRON\Downloads\LetsBatter 2.0\LetsBatter-master\LetsBatter\Shared\obj\Debug\net7.0\ref\LetsBatter.Shared.dll
