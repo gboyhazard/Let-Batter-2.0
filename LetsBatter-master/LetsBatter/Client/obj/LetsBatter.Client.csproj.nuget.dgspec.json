@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\client\\LetsBatter.Client.csproj": {}
+    "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Client\\LetsBatter.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\client\\LetsBatter.Client.csproj": {
+    "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Client\\LetsBatter.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\client\\LetsBatter.Client.csproj",
+        "projectUniqueName": "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Client\\LetsBatter.Client.csproj",
         "projectName": "LetsBatter.Client",
-        "projectPath": "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\client\\LetsBatter.Client.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\client\\obj\\",
+        "projectPath": "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Client\\LetsBatter.Client.csproj",
+        "packagesPath": "C:\\Users\\DELL INSPIRON\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\DELL INSPIRON\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\Shared\\LetsBatter.Shared.csproj": {
-                "projectPath": "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\Shared\\LetsBatter.Shared.csproj"
+              "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Shared\\LetsBatter.Shared.csproj": {
+                "projectPath": "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Shared\\LetsBatter.Shared.csproj"
               }
             }
           }
@@ -40,8 +40,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -81,13 +82,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )",
+              "version": "[8.0.11, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )",
+              "version": "[9.0.0, )",
               "autoReferenced": true
             }
           },
@@ -104,8 +105,20 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.8, 8.0.8]"
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -113,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -122,17 +135,17 @@
         }
       }
     },
-    "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\Shared\\LetsBatter.Shared.csproj": {
+    "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Shared\\LetsBatter.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\Shared\\LetsBatter.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Shared\\LetsBatter.Shared.csproj",
         "projectName": "LetsBatter.Shared",
-        "projectPath": "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\Shared\\LetsBatter.Shared.csproj",
-        "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\Downloads\\LetsBatter-master\\letsbatter\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Shared\\LetsBatter.Shared.csproj",
+        "packagesPath": "C:\\Users\\DELL INSPIRON\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL INSPIRON\\Downloads\\Let-Batter-2.0\\LetsBatter-master\\LetsBatter\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\DELL INSPIRON\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -154,8 +167,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -199,12 +213,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

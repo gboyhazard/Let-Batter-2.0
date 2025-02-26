@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LetsBatter.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88927b1d7fc9e024f9cdd176458796e534590a02")]
 [assembly: System.Reflection.AssemblyProductAttribute("LetsBatter.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LetsBatter.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
